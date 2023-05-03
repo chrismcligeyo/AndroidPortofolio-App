@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dev Portfolio</string>
+
+    <string name="about_chris">"Hi, my name is Christopher.
+I am a software developer with 3 years experience. I have knowledge in vaarious programming languages and heir frameworks. They include Java,Android,Javascript,PHP,HTML,CSS,VueJs,ReactJs,Node and ExpressJs. I also have knowledge in use of MYsQL,SQLITE and MongoDB"</string>
+    <string name="skills">* Java "\n"* Android "\n"*  Javascript "\n"*  Laravel "\n"*  PHP "\n"*  NodeJs "\n"*  ExpressJs "\n"*  ReactJS "\n"*  VueJs "\n"* Code Enthusiast
+      </string>
+
+    <string name="work">
+           * Chat App "\n"* Calories App "\n"* Diary App "\n"* Cat Bio App "\n"*  Teaching Programming
+    </string>
+    <string name="contact">
+
+
+    </string>
+
+</resources>

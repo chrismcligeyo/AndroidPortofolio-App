@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mcligeyo.mcligeyodev.com.mcligeyodev.MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="375dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/colorWebsiteTab"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/chris"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorAccent"/>
+
+
+
+            <TextView
+                android:id="@+id/devName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textSize="29sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Christopher Rabut" />
+
+            <TextView
+                android:id="@+id/devProfession"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:text="Software Developer"
+                android:layout_below="@+id/devName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        app:cardElevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:layout_height="53dp"
+        android:id="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/getInTouch"
+                android:layout_width="wrap_content"
+                android:text="Get in Touch"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorWebsiteTab"
+                android:drawableBottom="@android:drawable/ic_menu_call"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutId"
+            android:background="@color/colorPageTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_marginTop="45dp"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>
